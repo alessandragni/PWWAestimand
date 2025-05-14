@@ -1,36 +1,33 @@
 # PWWAestimand: Patient-Weighted While-Alive Estimand
 
-Github repository that provides demo scripts implemented in R
-allowing for the estimation of the Patient-Weighted While-Alive Estimand, 
-as suggested in Schmidli et al. (2023) [1],
-within a randomized treatment setting, 
-relying on the theory developed in https://doi.org/10.48550/arXiv.2412.03246
-and the implementation included within the R package `mets`.
+This Github repository contains R demo scripts for the estimation 
+of the Patient-Weighted While-Alive Estimand, 
+as proposed by Schmidli et al. (2023) [1], within a randomized treatment setting. 
+The implementation builds on theoretical developments from https://doi.org/10.48550/arXiv.2412.03246
+and leverages the implementation included within the R package `mets`, by Thomas Scheike.
 
 ## data folder
-In the folder data, we provide the colorectal cancer data [2], employed in the paper
+This folder includes the colorectal cancer data [2], used in the paper
 in the Web Appendix D.
 
-The HF-ACTION study data [3] analyzed in Section 6 of the paper,
-that were kindly made available 
-by the Biologic Specimen and Data Repository Information Coordinating Center (BioLINCC) 
-of the National Heart, Lung, and Blood Institute
+The HF-ACTION study data [3] analyzed in Section 6 of the paper, 
 cannot be shared due to privacy and confidentiality considerations.
+For our paper, they were kindly made available 
+by the BioLINCC of the National Heart, Lung, and Blood Institute.
+
 
 
 ## R folder
-In the folder R, we provide the R scripts that 
-would allow to reproduce the results of the paper (Sections 5 and 6) if the data from HF-ACTION were available.
+This folder provides R scripts to reproduce the analyses from Sections 5 and 6 of the paper:
 
-More specifically, the script `CaseStudy_DEMO.R` contains the code to estimate the Patient-Weighted While-Alive Estimand
+-- The script `CaseStudy_DEMO.R` contains the code to estimate the PWWA Estimand
 in the colorectal cancer case study setting, whose results are presented in the Web Appendix D of the paper.
-The script allows to produce plots to compare the PWWA estimand with the EWWA estimand [4].
+Also includes code to compare the PWWA estimand with the EWWA estimand [4], and to generate relevant plots.
 
-The script `SimulationStudy_DEMO.R` contains the code to estimate the Patient-Weighted While-Alive Estimand
-within different simulated setting, allowing to compare different estimators 
-and computing the main indicators, such as mean, bias, standard error, coverage and power.
-The simulation is based on patents data from a Copenhagen hospital; 
-in the paper, Tables 1 and 2 were obtained through similar code applied to the HF-ACTION data instead.
+-- The script `SimulationStudy_DEMO.R` performs simulations under various settings to assess PWWA estimator performance.
+Computes key performance metrics such as mean, bias, standard error, coverage, and power.
+Although based here on Copenhagen hospital data, 
+similar simulations produced Tables 1 and 2 in the paper using HF-ACTION data.
 
 
 ## References
