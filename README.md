@@ -4,7 +4,8 @@ This Github repository contains R demo scripts for the estimation
 of the Patient-Weighted While-Alive Estimand, 
 as proposed by Schmidli et al. (2023) [1], within a randomized treatment setting. 
 The implementation builds on theoretical developments from https://doi.org/10.48550/arXiv.2412.03246
-and leverages the implementation included within the R package `mets`, by Thomas Scheike.
+and leverages the implementation included within the R package `mets` 
+(specifically `WA_recurrent`, by Thomas Scheike).
 
 ## data folder
 This folder includes the colorectal cancer data [2], used in the paper
