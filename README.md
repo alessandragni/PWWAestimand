@@ -25,7 +25,8 @@ This folder provides R scripts to reproduce the analyses from Sections 5 and 6 o
 in the colorectal cancer case study setting, whose results are presented in the Web Appendix D of the paper.
 Also includes code to compare the PWWA estimand with the EWWA estimand [4], and to generate relevant plots.
 
-* The script `SimulationStudy_DEMO.R` performs simulations under various settings to assess PWWA estimator performance.
+* The script `SimulationStudy_DEMO.R` performs simulations under various settings to assess PWWA estimator performance,
+and compare it to the EWWA estimator.
 Computes key performance metrics such as mean, bias, standard error, coverage, and power.
 Although based here on Copenhagen hospital data, 
 similar simulations produced Tables 1 and 2 in the paper using HF-ACTION data.
