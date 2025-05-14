@@ -1,0 +1,17 @@
+Package: PWWAestimand
+Type: Package
+Title: Patient-Weighted While-Alive estimand DEMO
+Version: 0.0.1.0
+Authors@R: c(
+    person("Alessandra", "Ragni", , "alessandra.ragni@polimi.it", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3647-7340")),
+    person("Torben", "Martinussen", , "tma@sund.ku.dk", role = "aut"),
+    person("Thomas", "Scheike", , "thsc@sund.ku.dk", role = "aut")
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: 
+    R (>= 3.5.0)
+Imports: mets, doMC
+
