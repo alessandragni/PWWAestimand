@@ -21,11 +21,11 @@ by the BioLINCC of the National Heart, Lung, and Blood Institute.
 ## R folder
 This folder provides R scripts to reproduce the analyses from Sections 5 and 6 of the paper:
 
--- The script `CaseStudy_DEMO.R` contains the code to estimate the PWWA Estimand
+* The script `CaseStudy_DEMO.R` contains the code to estimate the PWWA Estimand
 in the colorectal cancer case study setting, whose results are presented in the Web Appendix D of the paper.
 Also includes code to compare the PWWA estimand with the EWWA estimand [4], and to generate relevant plots.
 
--- The script `SimulationStudy_DEMO.R` performs simulations under various settings to assess PWWA estimator performance.
+* The script `SimulationStudy_DEMO.R` performs simulations under various settings to assess PWWA estimator performance.
 Computes key performance metrics such as mean, bias, standard error, coverage, and power.
 Although based here on Copenhagen hospital data, 
 similar simulations produced Tables 1 and 2 in the paper using HF-ACTION data.
