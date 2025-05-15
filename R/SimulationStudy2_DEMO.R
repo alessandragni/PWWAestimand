@@ -312,7 +312,7 @@ for (dep in depvals) {
         rownames(df_row) = NULL
         
         temp = rbind(temp,
-                     cbind(df_row[2,-c(4)], df_row[3,c(5:8)]))
+                     cbind(df_row[1,], df_row[2,c(5:8)]))
         rownames(temp) = NULL
       }
     }
