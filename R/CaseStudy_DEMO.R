@@ -24,7 +24,7 @@ dtable(rr,~status)
 rr$rid <- rr$reverseCountid
 rr$trt <- rr$treatment
 
-# 
+###### Computation of the Estimands of interest ######
 res <- resR <- c()
 for (tt in seq(0.5,2.9,by=0.1)) {
   dd0 <- WA_recurrent(Event(time0,time1,status)~treat.f+cluster(id),
@@ -42,6 +42,8 @@ for (tt in seq(0.5,2.9,by=0.1)) {
 }
 
 
+###### Plots ######
+
 plotres <- function(res, ylab) {
   matplot(res[,1],res[,2:3],type="l",lwd=3,ylim=c(0.2,1.2),xlab="Time (years)",ylab=ylab)
   plotConfRegion(res[,1],res[,4:5],col=1)
@@ -53,7 +55,6 @@ plotres <- function(res, ylab) {
   }
   legend("bottomright",c("treatment:S","treatment:C"),lty=1:2,col=1:2,lwd=2.5)
 }
-
 
 plotres(res, ylab = "PWWA estimand")
 plotres(resR, ylab = "EWWA estimand")
