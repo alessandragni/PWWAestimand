@@ -7,12 +7,16 @@ as proposed by Schmidli et al. (2023) [1], within a randomized treatment setting
 
 The implementation builds on theoretical developments from
 
-> **Nonparametric estimation of the Patient Weighted While-Alive Estimand**  
+> **Nonparametric estimation of the Patient Weighted While-Alive Estimand**  [arXiv preprint](https://arxiv.org/abs/2412.03246)
 > A. Ragni, T. Martinussen, T. Scheike  
-> [arXiv preprint](https://arxiv.org/abs/2412.03246)
 
 and leverages the implementation included within the R package `mets` 
 (specifically `WA_recurrent()`, by Thomas Scheike).
+
+The development version of the package can be installed through
+```R
+remotes::install_github("kkholst/mets",ref="develop")
+```
 
 ## data folder
 This folder includes the colorectal cancer data [2], used in the paper

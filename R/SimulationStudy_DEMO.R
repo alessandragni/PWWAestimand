@@ -1,5 +1,6 @@
 ##### Demo Script for the Simulation Study in Section 5 #####
 
+# remotes::install_github("kkholst/mets",ref="develop")
 library(mets)
 library(doMC)
 
