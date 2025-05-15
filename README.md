@@ -7,8 +7,9 @@ as proposed by Schmidli et al. (2023) [1], within a randomized treatment setting
 
 The implementation builds on theoretical developments from
 
-> **Nonparametric estimation of the Patient Weighted While-Alive Estimand**  [arXiv preprint](https://arxiv.org/abs/2412.03246)
-> A. Ragni, T. Martinussen, T. Scheike  
+> **Nonparametric estimation of the Patient Weighted While-Alive Estimand**  
+> [arXiv preprint](https://arxiv.org/abs/2412.03246)
+> by A. Ragni, T. Martinussen, T. Scheike  
 
 and leverages the implementation included within the R package `mets` 
 (specifically `WA_recurrent()`, by Thomas Scheike).
