@@ -42,6 +42,15 @@ Computes key performance metrics such as mean, bias, standard error, coverage, a
 Although based here on Copenhagen hospital data, 
 similar simulations produced Tables 1 and 2 in the paper using HF-ACTION data.
 
+* The script `SimulationStudy2_DEMO.R`is an alternative script performing further simulations
+for Table 2.
+
+
+## simulations folder
+This folder includes the outputs of the simulations produced by the scripts `SimulationStudy_DEMO.R`
+(files `DemoSim.rda` and `DemoSim_withCov.rda`)
+and `SimulationStudy2_DEMO.R` (files `DemoSim2.rda` and `DemoSim_withCov2.rda`).
+
 
 ## References
 [1] Schmidli, Heinz, James H. Roger, and Mouna Akacha. "Estimands for recurrent event endpoints in the presence of a terminal event." Statistics in Biopharmaceutical Research 15.2 (2023): 238-248.

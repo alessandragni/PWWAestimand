@@ -213,7 +213,7 @@ for (dep in depvals)
 
 out <- list(resl=resl,outtot=outtot)
 
-save(out,file="data/DemoSim2.rda")
+save(out,file="simulations/DemoSim2.rda")
 
 
 # computation of the true values to obtain the "coverage"
@@ -240,7 +240,7 @@ for (dep in depvals)
 
 out <- list(resl=resl,outtot=outtot,true=restrue)
 
-save(out,file="data/DemoSim_withCov2.rda")
+save(out,file="simulations/DemoSim_withCov2.rda")
 
 
 
@@ -250,7 +250,7 @@ save(out,file="data/DemoSim_withCov2.rda")
 
 ##### Results analysis with beta1 = betad = -0.3 #####
 
-load('data/DemoSim_withCov2.rda')
+load('simulations/DemoSim_withCov2.rda')
 resl = out[[1]]
 outtot = out[[2]]
 true = out[[3]]
