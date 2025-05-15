@@ -348,7 +348,7 @@ print(xtable(temp, digits = 4))
 
 
 
-###### For Table 2 #####
+###### For Table 2 (first part) #####
 depvals <- c(1, 4)
 theta_vals <- c(0.5, 1, 2)
 cens_vals <- c(1)#, 2)
