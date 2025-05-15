@@ -303,3 +303,77 @@ outtotSUMM[(outtotSUMM$dep==1) & (outtotSUMM$varz==0.5) & (outtotSUMM$cens==1/4)
 outtotSUMM[(outtotSUMM$dep==1) & (outtotSUMM$varz==0.5) & (outtotSUMM$cens==1/4) & (outtotSUMM$scale1==2),   -c(9)][c(2,3),]
 
 
+
+
+
+###### CODE for producing tables ######
+
+library(xtable)
+
+####### For Table 1 #######
+depvals <- c(1)#, 4)
+theta_vals <- c(0.5, 1, 2)
+cens_vals <- c(1, 2)
+scale1_vals <- c(1)#, 2, 3)
+
+temp = NULL
+
+for (dep in depvals) {
+  for (theta in theta_vals) {
+    for (cens in cens_vals) {
+      for (s1 in scale1_vals) {
+        df_row1 = outtotCOEF[(outtotCOEF$dep == dep) & 
+                               (outtotCOEF$varz == theta) & 
+                               (outtotCOEF$cens == cens/4) & 
+                               (outtotCOEF$scale1 == s1), ][c(1,2,5,6),]
+        rownames(df_row1) = NULL
+        
+        df_row <- outtotSUMM[(outtotSUMM$dep == dep) &
+                               (outtotSUMM$varz == theta) &
+                               (outtotSUMM$cens == cens/4) &
+                               (outtotSUMM$scale1 == s1), -c(8)]
+        rownames(df_row) = NULL
+        
+        temp = rbind(temp,
+                     cbind(df_row1[1:2,-c(4)], df_row1[3:4,c(5:8)]),
+                     cbind(df_row[2,-c(4)], df_row[1,c(5:8)]))
+        rownames(temp) = NULL
+      }
+    }
+  }
+}
+
+print(xtable(temp, digits = 4))
+
+
+
+
+###### For Table 2 #####
+depvals <- c(1, 4)
+theta_vals <- c(0.5, 1, 2)
+cens_vals <- c(1)#, 2)
+scale1_vals <- c(0.5, 1, 2, 3)
+
+temp = NULL
+
+for (dep in depvals) {
+  for (theta in theta_vals) {
+    for (cens in cens_vals) {
+      for (s1 in scale1_vals) {
+        
+        df_row <- outtotSUMM[(outtotSUMM$dep == dep) &
+                               (outtotSUMM$varz == theta) &
+                               (outtotSUMM$cens == cens/4) &
+                               (outtotSUMM$scale1 == s1), -c(9)]
+        rownames(df_row) = NULL
+        
+        temp = rbind(temp,
+                     cbind(df_row[2,-c(4)], df_row[3,c(5:8)]))
+        rownames(temp) = NULL
+      }
+    }
+  }
+}
+
+print(xtable(temp, digits = 4))
+
