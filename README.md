@@ -42,11 +42,11 @@ Computes key performance metrics such as mean, bias, standard error, coverage, a
 Although based here on Copenhagen hospital data, 
 similar simulations produced Tables 1 and 2 and Web Table 4 in the paper using HF-ACTION data.
 
-* The script `utils.R` provides functions useful for the DEMO scripts.
+* The script `utils.R` provides all the functions necessary for running the two DEMO scripts `DEMO_CaseStudy.R` and `DEMO_SimulationStudy.R`.
 
 * The scripts `ProduceTab1.R`, `ProduceTab2.R`, `ProduceWebTab4.R` respectively produce Tables 1, 2 and Web Table 4 in the paper,
 from the outputs of the simulations using HF-ACTION data, that are available at the following 
-[link](https://polimi365-my.sharepoint.com/:f:/g/personal/10500163_polimi_it/Et-1kZPX-chDviMUAh2qxXoBXfh1xRw-OrEyZKcQAGhC8A?e=qRFJ1D)
+[link](https://polimi365-my.sharepoint.com/:f:/g/personal/10500163_polimi_it/Et-1kZPX-chDviMUAh2qxXoBXfh1xRw-OrEyZKcQAGhC8A?e=qRFJ1D).
 
 
 ## References
