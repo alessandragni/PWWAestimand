@@ -4,6 +4,8 @@
 # Similar code is employed for the case study in Section 6
 # based on the HF-Action clinical trial data
 
+# remotes::install_github("kkholst/mets",ref="develop")
+
 library(mets) 
 ?WA_recurrent
 

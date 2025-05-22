@@ -29,28 +29,24 @@ For our paper, they were kindly made available
 by the BioLINCC of the National Heart, Lung, and Blood Institute.
 
 
-
 ## R folder
 This folder provides R scripts to reproduce the analyses from Sections 5 and 6 of the paper:
 
-* The script `CaseStudy_DEMO.R` contains the code to estimate the PWWA Estimand
+* The script `DEMO_CaseStudy.R` contains the code to estimate the PWWA Estimand
 in the colorectal cancer case study setting, whose results are presented in the Web Appendix D of the paper.
 Also includes code to compare the PWWA estimand with the EWWA estimand [4], and to generate relevant plots.
 
-* The script `SimulationStudy_DEMO.R` performs simulations under various settings to assess PWWA estimator performance,
+* The script `DEMO_SimulationStudy.R` performs simulations under various settings to assess PWWA estimator performance,
 and compare it to the EWWA estimator.
 Computes key performance metrics such as mean, bias, standard error, coverage, and power.
 Although based here on Copenhagen hospital data, 
-similar simulations produced Tables 1 and 2 in the paper using HF-ACTION data.
+similar simulations produced Tables 1 and 2 and Web Table 4 in the paper using HF-ACTION data.
 
-* The script `SimulationStudy2_DEMO.R`is an alternative script performing further simulations
-for Table 2.
+* The script `utils.R` provides functions useful for the DEMO scripts.
 
-
-## simulations folder
-This folder includes the outputs of the simulations produced by the scripts `SimulationStudy_DEMO.R`
-(files `DemoSim.rda` and `DemoSim_withCov.rda`)
-and `SimulationStudy2_DEMO.R` (files `DemoSim2.rda` and `DemoSim_withCov2.rda`).
+* The scripts `ProduceTab1.R`, `ProduceTab2.R`, `ProduceWebTab4.R` respectively produce Tables 1, 2 and Web Table 4 in the paper,
+from the outputs of the simulations using HF-ACTION data, that are available at the following 
+[link](https://polimi365-my.sharepoint.com/:f:/g/personal/10500163_polimi_it/Et-1kZPX-chDviMUAh2qxXoBXfh1xRw-OrEyZKcQAGhC8A?e=qRFJ1D)
 
 
 ## References
