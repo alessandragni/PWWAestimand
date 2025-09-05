@@ -32,7 +32,7 @@ for (dep in c(1,4))
 outtotSUMM = as.data.frame(outtotSUMM) # for 0 and 1
 
 
-###### Create Web Table 4 (beta1=betad=0) #####
+###### Create Web Table 3 (beta1=betad=0) #####
 
 temp = NULL
 
