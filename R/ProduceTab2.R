@@ -1,9 +1,9 @@
 
 library(xtable)
 
+
 # Import functions
 source("R/utils.R")
-
 
 
 ##### Load simulations for Table 2 #####
