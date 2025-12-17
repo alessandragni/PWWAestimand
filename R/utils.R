@@ -347,12 +347,10 @@ ana <- function(res,true=NULL) { ## {{{
   if (!is.null(true)) {# {{{
     truedif <- do.call("rbind",lapply(true,function(x) x$coef) )
     truedif <- apply(truedif,2,mean)
-    #covdif <- apply(t(t(ee - 1.96*se.ee) < truedif & t(ee + 1.96*se.ee) > truedif),2,mean,na.rm=TRUE)
     covdif <- apply(t(t(coef - 1.96*scoef) < truedif & t(coef + 1.96*scoef) > truedif),2,mean,na.rm=TRUE)
     
     tcoefe <- do.call("rbind",lapply(true,function(x) x$coefe) )
     tcoefe <- apply(tcoefe,2,mean)
-    #cove <- apply(t(t(ee - 1.96*se.ee) < tcoefe & t(ee + 1.96*se.ee) > tcoefe),2,mean,na.rm=TRUE)
     cove <- apply(t(t(coefe - 1.96*scoefe) < tcoefe & t(coefe + 1.96*scoefe) > tcoefe),2,mean,na.rm=TRUE)
     
     m <- cbind(m,covdif)
@@ -376,7 +374,6 @@ anaR <- function(res,true=NULL) { ## {{{
   
   if (!is.null(true)) {# {{{
     truedif <- rep(0,3) 
-    #covdif <- apply(t(t(ee - 1.96*se.ee) < truedif & t(ee + 1.96*se.ee) > truedif),2,mean,na.rm=TRUE)
     covdif <- apply(t(t(coef - 1.96*scoef) < truedif & t(coef + 1.96*scoef) > truedif),2,mean,na.rm=TRUE)
     
     m <- cbind(m,covdif)
