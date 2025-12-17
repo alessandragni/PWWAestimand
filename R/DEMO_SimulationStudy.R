@@ -152,7 +152,7 @@ n <- 1000 # in the paper set to 1000
 nsim <- 10 # in the paper set to 5000
 
 
-# computation of the "mean","sd","mean-se",("power") 
+# computation of the "mean","sd","mean-se","power"
 resl <- list()
 outtot <- c()
 k <- 0
@@ -180,7 +180,7 @@ for (dep in depvals)
           }
 
 # computation of the true values 
-# as the mean of simulations
+# as the mean of simulations to obtain also the "bias", "mse" (and the "coverage")
 
 n <- 10000 
 nsim <- 100
