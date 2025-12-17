@@ -144,7 +144,7 @@ outtab1 <- list(resl=resl,outtot=outtot,true=restrue,beta11=beta11,betad1=betad1
 
 beta11 <- -0.3
 betad1 <- -0.3 
-# set both to 0 for the WEB TABLE 4 (NULL CASE) 
+# set both to 0 for the WEB TABLE 3 (NULL CASE) 
 # and save through save(outtab2,file="WAhfTab2_NULL.rda")
 
 
