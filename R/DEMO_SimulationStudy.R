@@ -102,7 +102,7 @@ for (dep in depvals)
 
 
 # computation of the true values 
-# as the mean of simulations to obtain also the "coverage"
+# as the mean of simulations to obtain also the "bias", "mse" and the "coverage"
 
 n <- 10000
 nsim <- 100
@@ -180,7 +180,7 @@ for (dep in depvals)
           }
 
 # computation of the true values 
-# as the mean of simulations to obtain also the "coverage"
+# as the mean of simulations
 
 n <- 10000 
 nsim <- 100
